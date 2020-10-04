@@ -50,6 +50,10 @@ input {
     cursor: pointer;
 }
 
+input::placeholder {
+    opacity: 0.8;
+}
+
 input:focus {
     outline: none;
 }
