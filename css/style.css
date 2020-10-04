@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+   
+#mapid { 
+    height: 70vh;
+    position: relative;
+}
+
+.container{
+    min-height: 100vh;
+}
+
+.container .container-top {
+    padding: 1.5rem;
+    background-image: url(../images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    height: 30vh;
+    width: 100%;
+    padding-bottom: 6.25rem;
+}
+
+h1 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+input {
+    padding: 1rem 1.25rem;
+    border: none;
+    width: 50%;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+form {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background-color: hsl(0, 0%, 17%);
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+form img {
+    padding: 0 1rem;
+}
+
+.infos {
+    background-color: white;
+    border-radius: 1.25rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 9.5rem;
+    z-index: 99999;
+    margin-top: 6.25rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.infos #item label {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.infos #item {
+    text-align: left;
+    flex: 0.25;
+    position: relative;
+}
+
+#item:not(:first-child)::before {
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: rgb(211, 206, 206);
+    position: absolute;
+    left: -10%;
+    top: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .infos {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        transform: translateX(-50%) translateY(-30%);
+    }
+
+    .infos #item {
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
+    #item:not(:first-child)::before {
+        display: none;
+    }
+}
