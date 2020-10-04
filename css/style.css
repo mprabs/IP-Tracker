@@ -16,7 +16,7 @@
 }
 
 .container .container-top {
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem;
     background-image: url(../images/pattern-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -24,7 +24,6 @@
     text-align: center;
     height: 40vh;
     width: 100%;
-    padding-bottom: 6.25rem;
 }
 
 h1 {
@@ -80,6 +79,11 @@ form img {
     padding: 0 1rem;
 }
 
+.map__container {
+    position: relative;
+    background-color: red;
+}
+
 .infos {
     background-color: white;
     border-radius: 1.25rem;
@@ -88,10 +92,10 @@ form img {
     display: flex;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-30%);
+    top: -17%;
+    transform: translateX(-50%);
     min-height: 9.5rem;
     z-index: 99999;
-    margin-top: 6.25rem;
     align-items: center;
     justify-content: space-between;
     padding: 0 3%;
