@@ -7,7 +7,7 @@
 }
    
 #mapid { 
-    height: 70vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -20,8 +20,9 @@
     background-image: url(../images/pattern-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     text-align: center;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     padding-bottom: 6.25rem;
 }
@@ -34,6 +35,8 @@ h1 {
 
 h3 {
     font-size: 1.25rem;
+    margin-top: 1rem;
+    font-weight: 700;
 }
 
 input {
@@ -81,19 +84,22 @@ form img {
     display: flex;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-30%);
     min-height: 9.5rem;
     z-index: 99999;
     margin-top: 6.25rem;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3%;
+    padding-left: 3%;
 }
 
 .infos #item label {
     text-transform: uppercase;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 2px;
 }
 
 .infos #item {
@@ -117,7 +123,7 @@ form img {
         flex-direction: column;
         text-align: center;
         padding: 1rem 0;
-        transform: translateX(-50%) translateY(-30%);
+        transform: translateX(-50%) translateY(-25%);
     }
 
     .infos #item {
@@ -126,5 +132,19 @@ form img {
     }
     #item:not(:first-child)::before {
         display: none;
+    }
+
+    h3 {
+        margin-top: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    input {
+        width: 80%;
     }
 }
