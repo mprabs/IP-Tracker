@@ -13,10 +13,10 @@ if(form) {
 }
 
 async function findMyIp() {
-    await fetch(`http://www.geoplugin.net/json.gp`)
+    await fetch(`https://ipapi.co/json/`)
         .then(async(response) => {
             const data = await response.json()
-            getIpInformation(data.geoplugin_request)
+            getIpInformation(data.ip)
         })
 }
 
