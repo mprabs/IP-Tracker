@@ -132,7 +132,6 @@ form img {
         flex-direction: column;
         text-align: center;
         padding: 1rem 0;
-        transform: translateX(-50%) translateY(-25%);
     }
 
     .infos .item {
