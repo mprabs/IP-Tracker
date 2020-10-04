@@ -114,12 +114,13 @@ form img {
 
 .item:not(:first-child)::before {
     content: '';
-    height: 100%;
-    width: 2px;
+    height: 60px;
+    width: 1px;
     background-color: rgb(211, 206, 206);
     position: absolute;
     left: -10%;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media screen and (max-width: 800px) {
