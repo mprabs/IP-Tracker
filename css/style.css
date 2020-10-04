@@ -44,6 +44,7 @@ input {
     border-bottom-left-radius: 0.625rem;
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 input:focus {
@@ -61,6 +62,11 @@ button {
     background-color: hsl(0, 0%, 17%);
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 59%);
 }
 
 form img {
