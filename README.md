@@ -1,5 +1,5 @@
 # Frontend Mentor - IP Address Tracker
-##[DEMO](https://mprabs.github.io/IP-Tracker/)
+[DEMO](https://mprabs.github.io/IP-Tracker/)
 
 ![Design preview for the IP Address Tracker coding challenge](./design/desktop-preview.jpg)
 
